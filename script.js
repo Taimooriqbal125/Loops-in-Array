@@ -2,23 +2,37 @@
 // console.log(temii.length);
 
 
-var nameofEmploy = ["masood","mannan","hannan","hadi","amjad","ali"] ;
+
 
 // nameofEmploy.slice(0,2);
 // nameofEmploy.splice(2 , 0 ,"Ajjjjjj","kallllll","loooooooo");
 // nameofEmploy.unshift("ali aja ");
 // nameofEmploy.push("amjad" , "kamran" ,"sohail");
-console.log(nameofEmploy.length);
-console.log("original :" , nameofEmploy);
+// console.log(nameofEmploy.length);
+// console.log("original :" , nameofEmploy);
 
 
-function getCalled(value , index , arr) {
-    if (value == hannan){
-        console.log("failed", value);
-    }
-    else{
-        console.log("Passed" , value)
-    }
-}
 
-nameofEmploy.forEach(getCalled);
+// var nameofEmploys = [" aki","mona","sajiiid","farime","amna","sajid","junagt","hassan","jumah","ajnna","aki"]
+// console.log(nameofEmploy.length)
+var nameofEmploy = ["masood","mannan","hannan","hadi","amjad","ali"] ;
+
+function getCalled(value , index ,arr){
+  if (value == "hannan" ){
+   return value + "failed"
+  }
+  else if(value == "mannan"){
+   return value + "Failed"
+  }
+  else if(value == "ali"){
+   return value + "failed"
+  }
+  else{
+   return value + "passed"
+  }
+} 
+var result = nameofEmploy.map(getCalled)
+console.log(result)
+
+// nameofEmploys.map(getCalled);
+

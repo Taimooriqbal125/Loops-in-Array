@@ -31,7 +31,7 @@ console.log("Original" , temii);
 // MOST IMPORTANT NOT EFFECTED ORIGINAL ARRAY
 temii.slice(0 , 1)
 
-// .imcludes in array given only boolean value
+// .includes in array given only boolean value
 let age = [10,27,78,20];
 var result = age.includes(10);
 console.log(result);
@@ -40,3 +40,4 @@ console.log(result);
 let employesnumber = [10,25,90,16,100];
 var returns = employesnumber.indexOf(100);
 console.log(returns);
+

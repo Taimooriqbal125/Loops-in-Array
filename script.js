@@ -54,8 +54,6 @@ else{
 var result = codeofEmploys.map(called);
 console.log(result);
 
-
-
 var max = ["ali","jamat","imran","kaleem","kubra"];
 function called(value , index , arr){
    if  ( value == "ali"){
@@ -68,3 +66,14 @@ return value + "hi";
 }
 var result1 = max.map(called);
 console.log(result1)
+
+// .some ( currentvalue , index , arr);
+let nums = [10,16,19];
+function get(currentitem , index , arr,value){
+if( typeof value === "string"){
+}
+}
+
+
+let finds = nums.every(get)
+console.log(finds)
